@@ -1,5 +1,5 @@
 
-# SPOTIFY_OAUTH_TOKEN and SPOTIFY_USER_ID could be found here: developer.spotify.com
+# SPOTIFY_OAUTH_TOKEN and SPOTIFY_USER_ID could be found here: developer.spotify.com (eg. https://developer.spotify.com/console/post-playlists/)
 SPOTIFY_OAUTH_TOKEN = "***PUT_HERE_YOUR_SPOTIFY_OAUTH_TOKEN***"
 SPOTIFY_USER_ID = "***PUT_HERE_YOUR_SPOTIFY_USER_ID***"
 
