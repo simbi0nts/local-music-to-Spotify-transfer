@@ -1,13 +1,12 @@
 
-import glob
 import json
 import os
-
-from mutagen.mp3 import MP3
-from pydub import AudioSegment
+from pathlib import Path
 
 from api.acrcloud import ARCloudApi
 from api.spotify import SpotifyAPI
+from mutagen.mp3 import MP3
+from pydub import AudioSegment
 
 
 def get_audio_recognition_service_cls():
@@ -69,7 +68,8 @@ class MainProcessor:
 
         os.chdir(self.media_folder)
         for extension in self.extension_list:
-            for track in glob.glob(extension):
+            for item in Path().rglob(extension):
+                track = str(item)
                 if not self._is_file_valid(track):
                     continue
 
