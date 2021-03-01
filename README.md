@@ -8,3 +8,5 @@ python.exe .\main.py -f "F:\MUSIC\MemeMusic" -p "Memes" -e '*.mp3' '*.aac' -o "o
 and don't forget to fill config files!
 
 Note: Some tracks might not be available in your region
+
+(!) Note2: You also need ffmpeg ([Link](https://ffmpeg.org/)). And don't forget to add this open-source software project to your PATH variable!
